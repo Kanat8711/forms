@@ -1,0 +1,29 @@
+<header>
+  <div class="container">
+    <h1><a [routerLink]="'/'">Angular Module</a></h1>
+    <div class="content">
+      <a class="home" [routerLink]="'/'">Home</a>
+      <a class="about" [routerLink]="'/about'">about</a>
+    </div>
+  </div>
+  <notifier-container></notifier-container>
+
+  <div class="wrapper">
+    <router-outlet></router-outlet>
+    <button class="gradient-button" (click)="onModal(true)">Заполнить форму</button>
+    <app-modal
+      *ngIf="modal"
+      [title]="title"
+      (close)="offModal($event)"
+      (onSend)="sendForm($event)"
+      (onValue)="dataForm($event)"
+    ></app-modal>
+  </div>
+  <hr>
+  <app-list
+  [data]="dataWithForm"
+  ></app-list>
+</header>
+
+
+

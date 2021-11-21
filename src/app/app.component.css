@@ -1,0 +1,82 @@
+* {
+    margin: auto;
+}
+input {outline:none;}
+
+.body {
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+  padding: 10px;
+}
+
+.ng-valid .ng-touched {
+    border: 1px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+    border: 1px solid #a94442; /* red */
+}
+p {
+  font-size: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  font-size: 60px;
+  margin: 20px;
+}
+
+h1 {
+  position: absolute;
+  left: 0;
+}
+.container {
+  position: relative;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.home {
+  cursor: pointer;
+}
+.about {
+  cursor: pointer;
+}
+.wrapper {
+  margin-top: 100px;
+}
+.red {
+  background: red;
+  color: #cccccc;
+}
+.blue {
+  background: blue;
+  color: #cccccc;
+}
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
+

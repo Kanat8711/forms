@@ -1,0 +1,17 @@
+<div class="backdrop">
+  <div class="modal1">
+
+    <form action="" [formGroup]="form" (ngSubmit)="submit()">
+      <span class="name">Имя</span>
+      <input type="text" formControlName="name">
+      <span class="name">Фамилия</span>
+      <input type="text" formControlName="lastName">
+      <span class="name">Год рождания</span>
+      <input type="date">
+      <button type="submit" (click)="send(false)">Отправить</button>
+    </form>
+
+<!--    <button class="close" (click)="onClose(false)">Close</button>-->
+<!--    <button class="close" (click)="send(false)">Send</button>-->
+  </div>
+</div>
