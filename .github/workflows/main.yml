@@ -28,7 +28,7 @@ jobs:
       - name: Export version to step variables
         id: test_version
         run: |
-          echo "::set-output name=version::$(jq -r '.version' package.json)"
+          echo "::set-output name=version::$(jq -r '.version' test-form.json)"
       # Build
       - name: Build
         run: npm run build --if-present -- --outputPath=dist/ui-v${{ steps.test_version.outputs.version }}
