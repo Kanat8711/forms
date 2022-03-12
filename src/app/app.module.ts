@@ -19,7 +19,8 @@ import {ModalComponent} from './modal/modal.component';
 import {SharedModule} from './shared/shared.module';
 import {HttpClientModule} from '@angular/common/http';
 import {NotifierConfig, NotifierModule} from 'angular-notifier';
-import { ListComponent } from './list/list.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { LoginComponent } from './login/login.component';
 
 export const notifierConfig: NotifierConfig = {
   position: {
@@ -42,7 +43,8 @@ export const notifierConfig: NotifierConfig = {
     HomeComponent,
     AdminComponent,
     ModalComponent,
-    ListComponent
+    ErrorPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
